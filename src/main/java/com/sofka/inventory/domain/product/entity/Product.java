@@ -1,4 +1,4 @@
-package com.sofka.inventory.persistence.entity;
+package com.sofka.inventory.domain.product.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,14 +10,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Document(collection = "products")
 public class Product {
-    @Id
-    private ObjectId id;
-    private String   name;
-    private int inInventory;
-    private boolean enabled;
-    private int min;
-    private int max;
-
-
+        @Id
+        private ObjectId id;
+        private String   name;
+        private int inInventory;
+        private boolean enabled;
+        private int min;
+        private int max;
 
 }
