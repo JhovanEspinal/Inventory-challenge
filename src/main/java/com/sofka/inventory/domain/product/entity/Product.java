@@ -11,8 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "products")
 public class Product {
         @Id
-        private ObjectId id;
-        private String   name;
+        private String id;
+        private String name;
         private int inInventory;
         private boolean enabled;
         private int min;
