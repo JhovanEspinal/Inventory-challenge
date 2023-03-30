@@ -17,5 +17,6 @@ public class Product {
         private boolean enabled;
         private int min;
         private int max;
+        private double price;
 
 }
